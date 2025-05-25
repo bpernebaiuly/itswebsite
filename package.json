@@ -46,7 +46,7 @@
     "clsx": "^2.1.1",
     "cypress": "^13.2.0",
     "dayjs": "^1.11.10",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.5.0",
     "framer-motion": "^11.0.3",
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
