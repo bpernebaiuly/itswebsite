@@ -1,12 +1,10 @@
 import Home from "@pages/Home";
-import {
-  Clubs,
-  Dashboard,
-  Error404,
-  Events,
-  Profile,
-  Shop,
-} from "@pages/route";
+import Clubs from "@pages/clubs/Clubs";
+import Dashboard from "@pages/dashboard/Dashboard";
+import Error404 from "@pages/error/Error404";
+import Events from "@pages/events/all/Events";
+import Profile from "@pages/profile/Profile";
+import Shop from "@pages/shop/Shop";
 import Trending from "@pages/Trending";
 import { lazy } from "react";
 import { default as DonotRenderWhenLoggedIn } from "./Auth/DonotRenderWhenLoggedIn";

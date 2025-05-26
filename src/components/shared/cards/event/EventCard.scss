@@ -132,21 +132,22 @@
     }
 
     .eventcard_cta {
-      background: #ff5a31;
-      color: white;
-      padding: 10px;
-      width: 50px;
-      height: 50px;
-      border-radius: 8px;
-      font-family: var(--outfit);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary); /* ClubCard-тағы түс */
+      width: 33px;
+      height: 33px;
+      border-radius: 50%; /* Шар жасау */
+      object-fit: contain;
       border: none;
-
+      cursor: pointer;
+      padding: 7px;
+    
       svg {
-        rotate: 45deg;
-        width: 80%;
-        height: 80%;
-        color: rgba(255, 255, 255, 0.95);
+        fill: white;
       }
     }
+    
   }
 }

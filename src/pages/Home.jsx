@@ -32,7 +32,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>SpecBaby</title>
+        <title>Jaryq</title>
         <meta
           name="description"
           content="Welcome to the homepage of NgoWorld, a hub for Users to collaborate with NGOs, Charities and more."

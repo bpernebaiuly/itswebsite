@@ -31,29 +31,6 @@ const Clubs = () => {
       <ComponentHelmet type="Clubs" />
       <Navbar />
 
-      <div className="clubs_header">
-        <div className="clubs_search_parent">
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Type to begin search, or use the filters"
-          />
-          <button>
-            Filters <CiFilter />
-          </button>
-        </div>
-
-        <Button
-          className="viewdashboard"
-          onClickfunction={() => {
-            navigate("/dashboard");
-          }}
-        >
-          Your Dashboard <PiCaretLeftBold />
-        </Button>
-      </div>
-
       <div className="clubs_parent">
         {!clubs || clubs?.length === 0 ? (
           <Loading />

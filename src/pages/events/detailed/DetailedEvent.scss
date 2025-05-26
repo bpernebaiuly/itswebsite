@@ -1,0 +1,37 @@
+.detailed-regulation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .detailed-regulation-content {
+    position: relative; /* 👈 бұл модалға қатысты "X" батырма орналасуын қамтамасыз етеді */
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  /* "X" батырмасын модалдың оң жақ жоғарғы бұрышына бекітеміз */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #e26959; /* 👈 сарғыш түс */
+    z-index: 10; /* модалдың үстінде көрінеді */
+  }
+  
