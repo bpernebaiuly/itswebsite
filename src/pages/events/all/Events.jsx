@@ -1,6 +1,6 @@
 import { Button, Footer, Loading, Navbar } from "@components/shared";
 import EventSlider from "@components/shared/cards/event/EventSlider";
-import CreateEvent from "@components/shared/createEvent/createEvent";
+import CreateEvent from "@components/shared/createEvent/CreateEvent";
 import ComponentHelmet from "@utils/ComponentHelmet";
 import { useState } from "react";
 import { CiFilter } from "react-icons/ci";
