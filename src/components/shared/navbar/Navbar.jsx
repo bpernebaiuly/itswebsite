@@ -22,16 +22,17 @@ const Links = [
     name: "Мақалалар",
     link: "/clubs",
   },
-  {
-    name: "Форум",
-    link: "/trending",
-  },
+  { name: "Әдістеме бөлімі", link: "/methodology" },
   {
     name: "Құқықтық реттеу",
     link: "/events",
   },
   {
-    name: "Қосымша",
+    name: "Мамандар кеңесі",
+    link: "/trending",
+  },
+  {
+    name: "Форум",
     link: "/shop",
   },
 ];

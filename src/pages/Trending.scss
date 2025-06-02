@@ -1,0 +1,62 @@
+.experts_advice_page {
+    padding: 2rem;
+    background: #f9f9f9;
+    min-height: 100vh;
+  
+    .experts_title {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #333;
+    }
+  
+    .videos_grid {
+      display: flex;
+      flex-direction: column; // қатарынан емес, баған түрінде
+      align-items: center;
+      gap: 2rem;
+    }
+
+  .video_card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+  
+    iframe {
+      display: block;
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+  
+    .video_caption {
+      padding: 1rem;
+      background: hwb(12 20% 0% / 0.817);
+      border-top: 1px solid #ddd;
+  
+      strong {
+        display: block;
+        font-size: 1.1rem;
+        color: #1f1f1f;
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #2c2c2c;
+      }
+    }
+  }
+  
+}

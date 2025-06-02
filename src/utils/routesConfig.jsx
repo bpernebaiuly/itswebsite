@@ -8,6 +8,8 @@ import Shop from "@pages/shop/Shop";
 import Trending from "@pages/Trending";
 import { lazy } from "react";
 import { default as DonotRenderWhenLoggedIn } from "./Auth/DonotRenderWhenLoggedIn";
+import MethodologyPage from "../pages/MethodologyPage";
+
 
 const SignIn = lazy(() => import("@pages/auth/SignIn"));
 const SignUp = lazy(() => import("@pages/auth/SignUp"));
@@ -33,6 +35,10 @@ const routesConfig = [
   { path: "/shop", element: <Shop /> },
   { path: "/trending", element: <Trending /> },
   { path: "*", element: <Error404 /> },
+  {
+    path: "/methodology",
+    element: <MethodologyPage />
+  }  
 ];
 
 export default routesConfig;

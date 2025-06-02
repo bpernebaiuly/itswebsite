@@ -1,22 +1,91 @@
-.clubs_parent {
+.articles-container {
   padding: 2rem 8rem;
-  min-height: 100vh;
-  margin: 0 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-  grid-template-rows: 1fr 1fr 1fr; /* Three equal rows */
-  gap: 2rem; /* Optional: Add space between grid items */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 
   @media screen and (max-width: 1200px) {
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    grid-template-rows: 1fr 1fr 1fr; /* Three equal rows */
     padding: 2rem 3rem;
   }
 
   @media screen and (max-width: 800px) {
-    grid-template-columns: 1fr; /* One column */
-    grid-template-rows: 1fr 1fr 1fr 1fr; /* Four equal rows */
-    padding: 3rem 2rem;
-    margin: 0;
+    padding: 2rem;
+  }
+}
+
+.article-card {
+  background-color: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+
+  .excerpt-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0.3rem;
+  }
+
+  .excerpt-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+      list-style-type: disc;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    strong {
+      color: #222;
+      font-weight: 600;
+    }
+  }
+
+  .download-section {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+
+    svg {
+      font-size: 1.2rem;
+      color: #0056b3;
+    }
+
+    a {
+      color: #0056b3;
+      text-decoration: underline;
+
+      &:hover {
+        color: #003f7f;
+      }
+    }
   }
 }

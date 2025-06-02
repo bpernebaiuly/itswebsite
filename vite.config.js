@@ -12,8 +12,8 @@ export default defineConfig({
       registerType: "autoUpdate",
       selfDestroying: true,
       manifest: {
-        short_name: "NgoWorld",
-        name: "NgoWorld",
+        short_name: "Jaryq",
+        name: "Jaryq",
         start_url: ".",
         display: "standalone",
         theme_color: "#000000",
