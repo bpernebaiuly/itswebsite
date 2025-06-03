@@ -1,10 +1,10 @@
 {
   "media": [
-    { "type": "video", "src": "/assets/icons/methodology/video1.MP4" },
+    { "type": "video", "src": "/assets/icons/methodology/video1.mp4" },
     { "type": "image", "src": "/assets/icons/methodology/image1.jpg" },
-    { "type": "video", "src": "/assets/icons/methodology/video2.MP4" },
+    { "type": "video", "src": "/assets/icons/methodology/video2.mp4" },
     { "type": "image", "src": "/assets/icons/methodology/image2.jpg" },
-    { "type": "video", "src": "/assets/icons/methodology/video3.MP4" },
+    { "type": "video", "src": "/assets/icons/methodology/video3.mp4" },
     { "type": "image", "src": "/assets/icons/methodology/image3.jpg" },
     { "type": "image", "src": "/assets/icons/methodology/image4.jpg" },
     { "type": "image", "src": "/assets/icons/methodology/image5.jpg" },

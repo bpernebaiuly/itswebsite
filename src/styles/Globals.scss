@@ -16,3 +16,60 @@ html {
   --secondary: #6b2615;
   --primary: #ff5b31;
 }
+
+
+.accessibility-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  svg {
+    stroke: white;
+  }
+
+  &:hover {
+    background: #333;
+  }
+}
+
+
+.accessibility-mode {
+  background-color: #000 !important;
+  color: #fff !important;
+  font-size: 1.2rem;
+
+  * {
+    background-color: transparent !important;
+    color: #fff !important;
+  }
+
+  a {
+    color: #0ff !important;
+    text-decoration: underline !important;
+  }
+
+  button {
+    background-color: #111 !important;
+    color: #fff !important;
+    border: 2px solid #fff;
+  }
+
+  input,
+  textarea,
+  select {
+    background-color: #111 !important;
+    color: #fff !important;
+    border: 1px solid #ccc;
+  }
+}

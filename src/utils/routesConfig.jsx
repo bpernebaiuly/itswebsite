@@ -9,6 +9,7 @@ import Trending from "@pages/Trending";
 import { lazy } from "react";
 import { default as DonotRenderWhenLoggedIn } from "./Auth/DonotRenderWhenLoggedIn";
 import MethodologyPage from "../pages/MethodologyPage";
+import MapPage from "@pages/MapPage";
 
 
 const SignIn = lazy(() => import("@pages/auth/SignIn"));
@@ -33,6 +34,7 @@ const routesConfig = [
   { path: "/dashboard", element: <Dashboard /> },
   { path: "/events", element: <Events /> },
   { path: "/shop", element: <Shop /> },
+  { path: "/map", element: <MapPage /> },
   { path: "/trending", element: <Trending /> },
   { path: "*", element: <Error404 /> },
   {

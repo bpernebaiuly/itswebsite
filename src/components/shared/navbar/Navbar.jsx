@@ -35,6 +35,7 @@ const Links = [
     name: "Форум",
     link: "/shop",
   },
+  { name: "Карта", link: "/map" },
 ];
 
 const Navbar = () => {

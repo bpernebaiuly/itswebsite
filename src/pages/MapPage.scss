@@ -1,0 +1,72 @@
+.map-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 140px); // Жоғарғы Navbar + төменгі Footer биіктігін есепке аламыз (шамамен)
+}
+
+.map-container {
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+
+  .sidebar {
+    width: 35%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+    padding: 1rem;
+    background: #f5f7fa;
+    position: relative;
+    z-index: 2; // 👈 картаның үстінде тұрады
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #c4c4c4;
+      border-radius: 8px;
+    }
+
+    .institution-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #e0f3ff;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.1rem;
+      }
+
+      p {
+        margin: 0.3rem 0;
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  .map {
+    width: 65%;
+    height: 100%;
+
+    #yandex-map {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1; // 👈 төменірек қоямыз
+    }
+  }
+}
